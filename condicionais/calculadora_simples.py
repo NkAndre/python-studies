@@ -13,7 +13,10 @@ elif operacao == '3':
     resultado = number1 * number2
     print(f'O Resultado da Multiplicação é : {resultado}')
 elif operacao == '4':
-    resultado = number1 / number2
-    print(f'O resultado da divisão é : {resultado}')
+    if number2 !=0:
+        resultado = number1 / number2
+        print(f'O resultado da divisão é : {resultado}')
+    else:
+        print('Não é possivel dividir por zero')    
 else:
     print('Numeros ou operador Invalidos!!')
