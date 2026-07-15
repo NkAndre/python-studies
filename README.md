@@ -16,7 +16,9 @@ Repositório dedicado aos meus estudos em Python.
 - Programação Orientada a Objetos
 - Manipulação de arquivos
 - Exercícios de lógica
-- 
+- Automação
+  ---
+  
 ## Objetivo
 
 Aprender Python do básico ao avançado por meio de teoria, exercícios e projetos práticos.
