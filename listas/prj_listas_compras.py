@@ -27,6 +27,9 @@ while  menu!="5":
         else:
              print('Produto indisponivel ou nao encontrado')
     elif menu == "3":
+     if len(produtos) == 0:
+            print('A lista está Vazia')
+     else:
         produtos_minusculos = [l.lower() for l in produtos]
         buscar = input("Qual produto deseja procurar? ").lower()
 
