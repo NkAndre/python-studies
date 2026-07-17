@@ -5,15 +5,21 @@ produtos = []
 while  menu!="5":
     print("\n===== MINI LISTA DE COMPRAS =====")
     menu = (input('1 - Adicionar Produto\n 2 - Remover Produto\n 3 - Buscar Produto\n 4 - Mostrar Lista\n 5 - Sair\n Escolha :  '))
+    
     if menu == "1":
    
         while True:
-
             produto =  (input("Adicione produto  (ou digite sair para voltar  ):  "))
             if produto.lower() == 'sair':
                 break
-            produtos.append(produto)
-            print(f'Produtos adicionados : {produtos}')
+            produtos_minusculos = [p.lower() for p in produtos]
+
+            if produto.lower() in produtos_minusculos:
+                 print("Esse produto já está na lista.")
+            else:
+                produtos.append(produto)
+                print(f'Produtos adicionados : {produtos}')
+
     elif menu == '2':
      if len(produtos) == 0:
             print('A lista está Vazia')
@@ -24,8 +30,10 @@ while  menu!="5":
         if remover in produtos:
                 produtos.remove(remover)
                 print(f'Produto removido com sucesso! Lista Atual {produtos}')
+
         else:
              print('Produto indisponivel ou nao encontrado')
+
     elif menu == "3":
      if len(produtos) == 0:
             print('A lista está Vazia')
@@ -35,12 +43,12 @@ while  menu!="5":
 
         if buscar in produtos_minusculos:
             posicao = produtos_minusculos.index(buscar)
-            print(f"Produto encontrado: {produtos[posicao]}.")
+            print(f"Produto encontrado: {produtos[posicao]} , (posição {posicao}).")
         else:
             print("Produto não encontrado.")
     elif menu == '4':
           if len(produtos) == 0:
-           print("A lista está vazia.")
+           print("A lista está Vazia.")
           else:
            print("\n===== LISTA DE COMPRAS =====")
            print(f"Total de produtos: {len(produtos)}\n")
@@ -51,8 +59,7 @@ while  menu!="5":
     elif menu == "5":
         print('Programa encerrado !')
     else:
-        print('opção invalida !')
-
+        print("Opção inválida!")
 
 
 
