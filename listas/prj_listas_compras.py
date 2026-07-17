@@ -17,6 +17,12 @@ while  menu!="5":
     elif menu == '2':
         print(f'Lista atual : {produtos}')
         remover = input("Qual Produto deseja remover? ")
+        if remover in produtos:
+                produtos.remove(remover)
+                print(f'Produto removido com sucesso! Lista Atual {produtos}')
+        else:
+             print('Produto indisponivel ou nao encontrado')
+
 
 
 
