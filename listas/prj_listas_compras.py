@@ -43,7 +43,10 @@ while  menu!="5":
            print("A lista está vazia.")
           else:
            print("\n===== LISTA DE COMPRAS =====")
+           print(f"Total de produtos: {len(produtos)}\n")
+
            for produto in produtos:
+              
                print(f"- {produto}")
     elif menu == "5":
         print('Programa encerrado !')
