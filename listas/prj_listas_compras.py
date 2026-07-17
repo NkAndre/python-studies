@@ -22,6 +22,16 @@ while  menu!="5":
                 print(f'Produto removido com sucesso! Lista Atual {produtos}')
         else:
              print('Produto indisponivel ou nao encontrado')
+    elif menu == "3":
+        produtos_minusculos = [l.lower() for l in produtos]
+        buscar = input("Qual produto deseja procurar? ").lower()
+
+        if buscar in produtos_minusculos:
+            posicao = produtos_minusculos.index(buscar)
+            print(f"Produto encontrado: {produtos[posicao]}.")
+        else:
+            print("Produto não encontrado.")
+
 
 
 
