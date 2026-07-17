@@ -15,8 +15,12 @@ while  menu!="5":
             produtos.append(produto)
             print(f'Produtos adicionados : {produtos}')
     elif menu == '2':
+     if len(produtos) == 0:
+            print('A lista está Vazia')
+     else:
         print(f'Lista atual : {produtos}')
         remover = input("Qual Produto deseja remover? ")
+       
         if remover in produtos:
                 produtos.remove(remover)
                 print(f'Produto removido com sucesso! Lista Atual {produtos}')
