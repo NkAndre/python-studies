@@ -47,6 +47,8 @@ while  menu!="5":
                print(f"- {produto}")
     elif menu == "5":
         print('Programa encerrado !')
+    else:
+        print('opção invalida !')
 
 
 
