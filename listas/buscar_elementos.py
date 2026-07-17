@@ -5,6 +5,8 @@ print(f'Lista atual: {linguagens}')
 
 buscar = (input("Qual Linguagem  Deseja Procurar ?"))
 if buscar in linguagens:
-    print('Linguagem encontrada!')
+    posicao = linguagens.index(buscar)
+
+    print(f'Linguagem encontrada : {buscar} , está na posição {posicao}.!')
 else:
     print('Nao encontrada')
