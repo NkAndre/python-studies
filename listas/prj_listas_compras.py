@@ -31,6 +31,16 @@ while  menu!="5":
             print(f"Produto encontrado: {produtos[posicao]}.")
         else:
             print("Produto não encontrado.")
+    elif menu == '4':
+          if len(produtos) == 0:
+           print("A lista está vazia.")
+          else:
+           print("\n===== LISTA DE COMPRAS =====")
+           for produto in produtos:
+               print(f"- {produto}")
+    elif menu == "5":
+        print('Programa encerrado !')
+
 
 
 
