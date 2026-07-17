@@ -14,6 +14,10 @@ while  menu!="5":
                 break
             produtos.append(produto)
             print(f'Produtos adicionados : {produtos}')
+    elif menu == '2':
+        print(f'Lista atual : {produtos}')
+        remover = input("Qual Produto deseja remover? ")
+
 
 
  
