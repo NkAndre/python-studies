@@ -42,11 +42,32 @@ while  menu!="5":
                      print(f'Idade: {aluno["idade"]}')
                      print(f'Cidade: {aluno["cidade"]}')
 
-                     encontrado=True
+                     encontrado = True
                      break
             if not encontrado:
                 print("Aluno não encontrado.")
-                
+
+    if menu =='4':
+         if len(alunos) ==0:
+            print('a lista está vazia, não será possivel realizar a busca.')
+         else:
+             buscar = input('Digite o nome do aluno :')
+             encontrado = False
+             for aluno in alunos :
+                 if aluno['nome'] ==buscar:
+                     alunos.remove(aluno)
+                     encontrado = True
+                     print("Aluno removido com sucesso!")
+                     break
+             if not encontrado:
+                 print('nao encontrado')
+    elif menu == "5":
+        print('Programa encerrado !')
+    else:
+        print("Opção inválida!")
+             
+
+
                     
     
 
