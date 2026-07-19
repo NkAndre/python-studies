@@ -27,7 +27,7 @@ while  menu!="5":
 
              for chave, valor in aluno.items():
                 print(f'{chave} : {valor}')
-                print('-' * 20)
+             print('-' * 20)
     
     if menu =='3':
         if len(alunos) ==0:
@@ -49,7 +49,7 @@ while  menu!="5":
 
     if menu =='4':
          if len(alunos) ==0:
-            print('a lista está vazia, não será possivel realizar a busca.')
+             print("A lista está vazia. Não há alunos para remover.")
          else:
              buscar = input('Digite o nome do aluno :')
              encontrado = False
