@@ -28,7 +28,27 @@ while  menu!="5":
              for chave, valor in aluno.items():
                 print(f'{chave} : {valor}')
                 print('-' * 20)
-        
+    
+    if menu =='3':
+        if len(alunos) ==0:
+            print('a lista está vazia, não será possivel realizar a busca.')
+        else:
+            buscar = input('Digite o nome do aluno :')
+            encontrado = False
+            for aluno in alunos:
+                if aluno['nome'] ==buscar:
+                     print(f'Aluno {aluno["nome"]} encontrado!!')
+                     print(f'Nome: {aluno["nome"]}')
+                     print(f'Idade: {aluno["idade"]}')
+                     print(f'Cidade: {aluno["cidade"]}')
+
+                     encontrado=True
+                     break
+            if not encontrado:
+                print("Aluno não encontrado.")
+                
+                    
+    
 
 
                 
