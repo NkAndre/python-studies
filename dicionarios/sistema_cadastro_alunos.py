@@ -15,7 +15,7 @@ while  menu!="5":
            aluno = {}
            aluno["nome"] = input("Digite o nome: ")
            aluno["idade"] = int(input("Digite a idade: "))
-           aluno["cidade"] = input("Digite a cidade: ")
+           aluno["curso"] = input("Digite o curso: ")
            alunos.append(aluno)     
            print(f'Aluno {aluno["nome"]} Cadastrado com sucesso!!')
 
@@ -36,11 +36,11 @@ while  menu!="5":
             buscar = input('Digite o nome do aluno :')
             encontrado = False
             for aluno in alunos:
-                if aluno['nome'] ==buscar:
+                if aluno['nome'].lower() ==buscar.lower():
                      print(f'Aluno {aluno["nome"]} encontrado!!')
                      print(f'Nome: {aluno["nome"]}')
                      print(f'Idade: {aluno["idade"]}')
-                     print(f'Cidade: {aluno["cidade"]}')
+                     print(f'Curso: {aluno["curso"]}')
 
                      encontrado = True
                      break
@@ -54,7 +54,7 @@ while  menu!="5":
              buscar = input('Digite o nome do aluno :')
              encontrado = False
              for aluno in alunos :
-                 if aluno['nome'] ==buscar:
+                 if aluno['nome'].lower() ==buscar.lower():
                      alunos.remove(aluno)
                      encontrado = True
                      print("Aluno removido com sucesso!")
