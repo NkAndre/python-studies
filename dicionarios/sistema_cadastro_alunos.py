@@ -19,7 +19,7 @@ while  menu!="5":
            alunos.append(aluno)     
            print(f'Aluno {aluno["nome"]} Cadastrado com sucesso!!')
 
-    if menu =='2':
+    elif menu =='2':
         if len(alunos) ==0:
             print('A lista está vazia')
         else:
@@ -29,7 +29,7 @@ while  menu!="5":
                 print(f'{chave} : {valor}')
              print('-' * 20)
     
-    if menu =='3':
+    elif menu =='3':
         if len(alunos) ==0:
             print('a lista está vazia, não será possivel realizar a busca.')
         else:
@@ -47,7 +47,7 @@ while  menu!="5":
             if not encontrado:
                 print("Aluno não encontrado.")
 
-    if menu =='4':
+    elif menu =='4':
          if len(alunos) ==0:
              print("A lista está vazia. Não há alunos para remover.")
          else:
