@@ -17,7 +17,19 @@ while  menu!="5":
            aluno["idade"] = int(input("Digite a idade: "))
            aluno["cidade"] = input("Digite a cidade: ")
            alunos.append(aluno)     
-           print(f'Aluno {aluno["nome"]}  Cadastrado com sucesso!!')
+           print(f'Aluno {aluno["nome"]} Cadastrado com sucesso!!')
+
+    if menu =='2':
+        if len(alunos) ==0:
+            print('A lista está vazia')
+        else:
+            for aluno in alunos:
+
+             for chave, valor in aluno.items():
+                print(f'{chave} : {valor}')
+                print('-' * 20)
+        
+
 
                 
             
