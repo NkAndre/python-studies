@@ -17,6 +17,10 @@ Repositório dedicado aos meus estudos em Python.
 - Manipulação de arquivos
 - Exercícios de lógica
 - Automação
+---
+## Mini Projetos
+
+- Lista de Compras
   
   ---
 ## Objetivo
