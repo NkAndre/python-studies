@@ -21,6 +21,7 @@ Repositório dedicado aos meus estudos em Python.
 ## Mini Projetos
 
 - Lista de Compras
+- Cadastro de Alunos
   
   ---
 ## Objetivo
