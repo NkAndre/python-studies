@@ -1,5 +1,5 @@
 def somar(a,b):
-    return a +b
+    return a + b
 
 def executar(operacao, x,z):
     return operacao ( x + z)
